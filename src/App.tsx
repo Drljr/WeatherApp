@@ -6,14 +6,30 @@ import WeatherDisplay from './components/WeatherDisplay';
 interface WeatherData {
     location: {
         name: string;
+        localtime: Date | string;
     };
     current: {
         temp_c: number;
         condition: {
             text: string;
         };
+        wind_mph: number;
+        feelslike_c: number;
+        humidity: number;
+    };
+    forecast: {
+        forecastday: {
+            date: Date;
+            day: {
+                avgtemp_c: number;
+            };
+            condition: {
+                text: string;
+            };
+        };
     };
 }
+
 
 function App() {
   const [city, setCity] = useState<string | null>(null); // Initial city
@@ -72,12 +88,20 @@ function App() {
         <Search onSearch={handleSearch} />
         {isLoading && <p>Loading weather data...</p>}
         {error && <p>Error: {error}</p>}
-        {weatherData && <WeatherDisplay weatherData={weatherData} />}
-        {!weatherData && !isLoading && !error && <p>No weather data found for this city.</p>}
+        {weatherData ? (
+          <WeatherDisplay weatherData={weatherData} />
+        ) : (
+          <>
+            {isLoading && <p>Loading weather data...</p>}
+            {!isLoading && !error && <p>No weather data found for this city.</p>}
+          </>
+        )}
+
       </div>
 
     </div>
   )
 }
+
 
 export default App

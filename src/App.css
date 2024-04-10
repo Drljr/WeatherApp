@@ -14,8 +14,258 @@ body {
 .widget {
   background: linear-gradient(to right, #fafafa 65%, #e0e0e0 45%);
   padding: 400px;
-  width: 500px;
+  width: 700px;
+  height: 20px;
   border-radius: 50px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+.data1 {
+  color: grey;
+}
+
+input[type="text"] {
+  position: absolute;
+  top: 120px;
+  right: 50%;
+  width: 25%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: grey;
+  box-shadow: 0 0 5px rgb(235, 229, 229);
+}
+
+input[type="text"]::placeholder {
+  color: black;
+}
+
+.date {
+  position: absolute;
+  top: 7%;
+  right: 58%;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+}
+
+.temp {
+  position: absolute;
+  top: 70px;
+  right: 55%;
+  font-size: 200px;
+}
+
+.weather-description {
+  position: absolute;
+  top: 520px;
+  font-size: 45px;
+  right: 50%;
+}
+
+.city {
+  position: absolute;
+  top: 7%;
+  font-size: 15px;
+  right: 80%;
+  flex-wrap: wrap;
+  text-wrap: wrap;
+  color: black;
+}
+
+.greeting {
+  position: absolute;
+  top: 7%;
+  right: 13%;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.temp2 {
+  position: absolute;
+  top: 190px;
+  right: 21%;
+  font-size: 50px;
+}
+
+
+.weather-description2 {
+  position: absolute;
+  top: 350px;
+  right: 17%;
+  font-size: 20px;
+}
+
+.hourly-forecast {
+  position: absolute;
+  top: 400px;
+  right: 14%;
+  font-size: 30px;
+  color: black;
+}
+
+.pill-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 24%;
+  top: 490px;
+  background-color: rgba(250, 250, 250, 0.7);
+  border-radius: 13px;
+  padding: 10px;
+  text-align: center;
+  width: 68px;
+  margin: 5px;
+  height: 120px;
+  border: 3px solid lightgrey;
+}
+
+.pill-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 17%;
+  top: 490px;
+  background-color: rgba(250, 250, 250, 0.7);
+  border-radius: 13px;
+  padding: 10px;
+  text-align: center;
+  width: 68px;
+  margin: 5px;
+  height: 120px;
+  border: 3px solid lightgrey;
+}
+
+.pill-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 10%;
+  top: 490px;
+  background-color: rgba(250, 250, 250, 0.7);
+  border-radius: 13px;
+  padding: 10px;
+  text-align: center;
+  width: 68px;
+  margin: 5px;
+  height: 120px;
+  border: 3px solid lightgrey;
+}
+
+.pill-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 24%;
+  top: 670px;
+  background-color: rgba(250, 250, 250, 0.7);
+  border-radius: 13px;
+  padding: 10px;
+  text-align: center;
+  width: 68px;
+  margin: 5px;
+  height: 120px;
+  border: 3px solid lightgrey;
+}
+
+.pill-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 17%;
+  top: 670px;
+  background-color: rgba(250, 250, 250, 0.7);
+  border-radius: 13px;
+  padding: 10px;
+  text-align: center;
+  width: 68px;
+  margin: 5px;
+  height: 120px;
+  border: 3px solid lightgrey;
+}
+
+.pill-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 10%;
+  top: 670px;
+  border-radius: 13px;
+  padding: 10px;
+  text-align: center;
+  width: 68px;
+  margin: 5px;
+  background-color: rgba(250, 250, 250, 0.7);
+  height: 120px;
+  border: 3px solid lightgrey;
+}
+.time {
+  position: absolute;
+  font-weight: bold;
+  top: 14%;
+  font-size: 40px;
+  right: 16%;
+  color: black;
+}
+.wind1 {
+  position: absolute;
+  top: 229px;
+  right: 16%;
+}
+
+.wind1 span{
+  padding-left: 5px;
+}
+
+.humidity1 {
+  position: absolute;
+  top: 255px;
+  right: 17.5%;
+}
+
+.humidity1 span {
+  padding-left: 5px;
+}
+
+.wind2 {
+  position: absolute;
+  top: 350px;
+  right: 48%;
+  font-size: 27px;
+}
+
+.wind2 span {
+  padding-left: 20px;
+}
+
+.humidity2 {
+  position: absolute;
+  top: 400px;
+  right: 51%;
+  font-size: 27px;
+}
+
+.humidity2 span {
+  padding-left: 20px;
+}
+
+.feeling {
+  position: absolute;
+  top: 290px;
+  right: 17%;
 }
