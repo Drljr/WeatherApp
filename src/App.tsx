@@ -3,6 +3,13 @@ import { useState, useEffect } from 'react';
 import Search from './components/Search';
 import WeatherDisplay from './components/WeatherDisplay';
 
+interface ForecastData {
+    time: string;
+    temp_c: number;
+    condition: {
+        text: string;
+    };
+}
 interface WeatherData {
     location: {
         name: string;
@@ -26,6 +33,7 @@ interface WeatherData {
             condition: {
                 text: string;
             };
+            hour: ForecastData[];
         };
     };
 }
